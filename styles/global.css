@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; /*reset de fonte*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand-color-primary: #F7B733;
+  --brand-color-secondary: #FC4A1A;
+  --bg-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-primary:#F4F4F5;
+  --text-color-secondary: #A1A1AA;
+
+  --ff-sans: "Inter", system-ui, serif;
+  --fw-base: 400;
+  --fw-md:500;
+  --fw-bold: 800;
+
+  /*Fonts Mobile*/
+  --fs-sm: 0.875rem; /* 14/16 */
+  --fs-base: 1rem; /* 16/16 */
+  --fs-lg: 1.25rem; /* 20/16 */
+  --fs-xl: 1.5rem; /* 24/16 */
+  --fs-2xl: 2.5rem; /* 40/16 */
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fs-base);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  color: var(--text-color-primary);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+  }
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*herdando a cor defina pelo pai*/
+}
+
+ul[role="list"] { /*tirar a bolinha da lista*/
+list-style: none;
+}
+
+@media (width >= 80em) { /*1280px. O "em" busca a font size pai. Font size do @media é sempre root*/
+  :root {
+  --fs-lg: 2rem;
+  --fs-xl: 3rem;
+  --fs-2xl: 4rem;
+  }
+}
+
