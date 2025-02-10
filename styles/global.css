@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   font: inherit; /*reset de fonte*/
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; /*suavisar a fonte*/
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -32,6 +32,11 @@
   --fs-lg: 1.25rem; /* 20/16 */
   --fs-xl: 1.5rem; /* 24/16 */
   --fs-2xl: 2.5rem; /* 40/16 */
+
+  --py-base: 1rem; /*py: padding do eixo y*/
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+  --px-lg:1.5rem; /*px: padding do eixo x*/
 }
 
 html {
@@ -79,6 +84,12 @@ list-style: none;
   --fs-lg: 2rem;
   --fs-xl: 3rem;
   --fs-2xl: 4rem;
+
+  --py-base: 1.5rem;
+  --py-lg: 2.5rem;
+  --py-xl: 5rem;
+
+  --px-lg: 2rem;
   }
 }
 
