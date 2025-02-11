@@ -18,7 +18,7 @@
   --max-width: 375px; /*mobile*/
   width: min(var(--max-width), 100% - var(--px-lg) * 2);/*tamanho total menos as laterais (*2), 1.5rem de um lado e de outro*/
   margin-inline: auto; /*centralizar*/
-  border: solid violet;
+  /*border: solid violet;*/
 }
 
 .desktop-only {
@@ -34,8 +34,16 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-1\.5 { /*a barra é para deixar o ponto como texto*/
+  gap: 1.5rem;
 }
 
 .grid {
