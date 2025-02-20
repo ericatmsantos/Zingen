@@ -88,7 +88,12 @@ color: transparent;
 }
 
 ul[role="list"] { /*tirar a bolinha da lista*/
-list-style: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
 }
 
 @media (width >= 80em) { /*1280px. O "em" busca a font size pai. Font size do @media é sempre root*/
